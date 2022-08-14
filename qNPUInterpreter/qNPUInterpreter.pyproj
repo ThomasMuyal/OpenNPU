@@ -1,0 +1,45 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>f5d486c9-5d2f-444f-8944-2d38823ddf25</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>qNPUInterpreter.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>qNPUInterpreter</Name>
+    <RootNamespace>qNPUInterpreter</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="decimalfraction_to_binary.py" />
+    <Compile Include="gemm_class.py" />
+    <Compile Include="gui.py" />
+    <Compile Include="interpretador.py" />
+    <Compile Include="printDatapathv2.py" />
+    <Compile Include="printFrequencyDividerv2.py" />
+    <Compile Include="printGemmQuant.py" />
+    <Compile Include="printGemmv2.py" />
+    <Compile Include="print_network_data_package.py" />
+    <Compile Include="print_relu.py" />
+    <Compile Include="qNPUInterpreter.py" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
